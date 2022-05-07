@@ -31,8 +31,8 @@ pipeline {
 
         stage('Deployment') {
             steps {
-                sh 'sshpass -p "123" -v scp target/gamutgurus.war varun@172.17.0.3:/home/varun/Distros/apache-tomcat-9.0.59/webapps'
-                sh 'sshpass -p "123" -v ssh varun@172.17.0.3 "/home/varun/Distros/apache-tomcat-9.0.59/bin/startup.sh"'
+                sh 'sshpass -p "123" -v scp target/gamutgurus.war varun@172.17.0.3:/home/varun/Distros/apache-tomcat-9.0.62/webapps'
+                sh 'sshpass -p "123" -v ssh varun@172.17.0.3 "/home/varun/Distros/apache-tomcat-9.0.62/bin/startup.sh"'
             }
         }
     }
